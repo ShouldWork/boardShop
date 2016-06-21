@@ -1,0 +1,129 @@
+/* Navbar */
+/* to include navigation panes and logo */
+
+/* Left side */
+
+
+
+.side {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 150px;
+	height: 100%;
+	background-color: aqua;
+	float: none;
+}
+
+
+#leftSide{
+	left: 0;
+}
+
+/* Right side */ 
+
+#rightSide {
+	right: 0;
+}
+
+/* Top of page */
+
+
+#mainContainer {
+	margin: 10px 160px;
+}
+
+#logoBanner {
+	height: 200px;
+	width: 100%;
+	margin: 10px 0;
+	background-color: orange;
+}
+
+#topOfPage header{
+	position: relative;
+	padding: 10px;
+	text-align: center;
+}
+/* Content Cell */
+.itemCell {
+	height: 100px;
+	width: 100px;
+	background-color: black;
+	color: ghostWhite;
+}
+
+#forSale {
+	padding: 10px;
+	margin: 20px 0;
+	background-color: rgba;
+	overflow: hidden;
+}
+#forSale h2{
+	text-align: center;
+	display: block;
+}
+
+#forSale ul , li {
+	list-style: none;
+}
+
+/* Bottom page */
+#bottomOfPage {
+	height: 400px;
+	width: auto;
+	margin: 10px 0;
+	background-color: purple;
+}
+
+
+/* Footer */ 
+#footer {
+	height: 80px;
+	width: auto;
+	background-color: rgba(0,0,0,0.70);
+	color: ghostWhite;
+}
+
+
+
+
+/* other classes */ 
+
+.addFlex_center {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+/* HTML 5 tags: 
+article
+section
+header
+footer
+address - Used to wrap address information. Symantec meaning. 
+aside
+figure When referred to from the content. Not all images are wrapped in figure
+figcaption
+summary and details -- Should expand with details not supported in IE or FF. Only in Chrome don't use.
+nav audio and video
+canvas
+;
+
+Inline tags: 
+mark -- Highlight content
+meter -- Represent a value within a range 
+progress -- Indicate progress of task. 
+output -- 
+time -- Symantec nothing visual. Time indication is machine readable. 
+
+*/
