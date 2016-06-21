@@ -3,7 +3,9 @@
 
 /* Left side */
 
-
+* {
+	box-sizing: border-box;
+}
 
 .side {
 	position: fixed;
@@ -12,7 +14,6 @@
 	width: 150px;
 	height: 100%;
 	background-color: aqua;
-	float: none;
 }
 
 
@@ -30,14 +31,14 @@
 
 
 #mainContainer {
-	margin: 10px 160px;
+	margin: 10px 50px;
 }
 
 #logoBanner {
 	height: 200px;
 	width: 100%;
 	margin: 10px 0;
-	background-color: orange;
+	background-color: rgba(255,120,0,0.60);
 }
 
 #topOfPage header{
@@ -46,26 +47,26 @@
 	text-align: center;
 }
 /* Content Cell */
-.itemCell {
-	height: 100px;
-	width: 100px;
-	background-color: black;
-	color: ghostWhite;
-}
 
-#forSale {
-	padding: 10px;
-	margin: 20px 0;
-	background-color: rgba;
-	overflow: hidden;
+.tileContainer {
+	padding: 0px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	min-height: 500px;
+	min-width: 700px;
+	max-width: 700px;
+	overflow: auto;
+	background-color: rgba(0,130,255,0.30);
 }
-#forSale h2{
+.tileContainer h2{
+	text-shadow: 0 0 0 black;
+	color: white;
 	text-align: center;
-	display: block;
 }
 
-#forSale ul , li {
+.tileContainer ul , li {
 	list-style: none;
+	padding-bottom: 20px;
 }
 
 /* Bottom page */
@@ -86,24 +87,73 @@
 }
 
 
-
-
 /* other classes */ 
 
+
 .addFlex_center {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 
+.tile-item {
+	position: relative;
+	background: rgba(0,0,0,0.70);
+	padding: 5px;
+	width: 300px;
+	height: 250px;
+	margin-top: 10px;
+	margin-left: 10px;
+	top: 0;
+	cursor: pointer;
+	box-shadow: none;
+	line-height: 150px;
+	color: white;
+	text-align: center;
+	transition-property: all;
+	transition-duration: .5s;
+}
 
+.highlighted {
 
+	transition-timing-function: ease-in;
+	position: relative;
+	top: -10px;
+	box-shadow: 5px 20px 15px black;
+	border: 2px solid ghostWhite;
+	font-size: 150%;
+	text-shadow: 0 0 2px tomato;
+}
 
+#sizeList{
+	font-size: 100%;
+	padding: 0;
+	margin: 0;
 
+	background-color: tomato;
+}
 
+#sizeList li {
+	text-align: center;
+	height: 50px;
+	width: 50px;
+}
 
-
+#background{
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background: transparent url('hill.jpg') no-repeat;
+	background-size: cover;
+	z-index: -1;
+}
 
 /* HTML 5 tags: 
 article
